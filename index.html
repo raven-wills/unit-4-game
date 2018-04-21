@@ -16,25 +16,56 @@
 
 <body>
     <header id="header"></header>
+    <div class="fixed-bottom">
+        <audio autoplay controls id="galagaRap">
+            <source src="galagaRap.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <audio id="shot">
+        <source src="shot.mp3" type="audio/mpeg">
+    </audio>
 
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-3-md">
-                <img src="assets/images/galaga1.png" alt="White galaga ship">
+                <img class="ship" src="assets/images/white.png" alt="White galaga ship" id="whiteShip">
             </div>
             <div class="col-3-md">
-                <img src="assets/images/galaga2.png" alt="Red galaga ship">
+                <img class="ship" src="assets/images/red.png" alt="Red galaga ship" id="redShip">
             </div>
             <div class="col-3-md">
-                <img src="assets/images/galaga5.png" alt="Green galaga ship">
+                <img class="ship" src="assets/images/blue.png" alt="Blue galaga ship" id="blueShip">
             </div>
             <div class="col-3-md">
-                <img src="assets/images/galaga4.png" alt="Yellow galaga ship">
+                <img class="ship" src="assets/images/purple.png" alt="Purple galaga ship" id="purpleShip">
             </div>
         </div>
     </div>
-    <p>Can you defeat King Galaspark?</p>
-    <p>Choose your fighter to begin</p>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-3-md">
+                <img src="assets/images/bullet.png" alt="Bullet" id="whiteBullet">
+            </div>
+            <div class="col-3-md">
+                <img src="assets/images/bullet.png" alt="Bullet" id="redBullet">
+            </div>
+            <div class="col-3-md">
+                <img src="assets/images/bullet.png" alt="Bullet" id="blueBullet">
+            </div>
+            <div class="col-3-md">
+                <img src="assets/images/bullet.png" alt="Bullet" id="purpleBullet">
+            </div>
+        </div>
+    </div>
+    <div class="message">
+        <p>Can you defeat King Galaspark?</p>
+        <p>Choose your fighter to begin</p>
+    </div>
+    <div class="justify-content-md-center">
+        <img src="assets/images/explosion.png" alt="Explosion" id="explosion">
+        <img src=" assets/images/kingGalaspark.png " alt="King Galaspark " id="kingGalaspark">
+    </div>
+
     <div class="game">
         <p>Wins:
             <span id="wins"></span>
@@ -42,7 +73,11 @@
         <p>Losses:
             <span id="losses"></span>
         </p>
+        <p>HP:
+            <span id="galasparkHealth"></span>
+        </p>
     </div>
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>

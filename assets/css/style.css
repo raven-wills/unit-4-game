@@ -29,9 +29,123 @@ img {
   margin: 10px;
 }
 
+.ship {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* White ship animations */
+#whiteShip:hover {
+  transform: rotate(143deg);
+}
+#whiteShipFire {
+  transform: rotate(143deg) scale(1.1, 1.5);
+}
+
+#whiteBullet {
+  opacity: 0;
+  width: 20px;
+  height: 25px;
+  margin-right: 40px;
+  transform: rotate(143deg);
+}
+
+#whiteBulletFire {
+  opacity: 100;
+  width: 20px;
+  height: 25px;
+  margin-right: 40px;
+  transform: rotate(143deg);
+}
+
+/* Red ship animations */
+#redShip:hover {
+  transform: rotate(160deg);
+}
+#redShipFire {
+  transform: rotate(160deg) scale(1.1, 1.5);
+}
+
+#redBullet {
+  opacity: 0;
+  width: 20px;
+  height: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transform: rotate(160deg);
+}
+
+#redBulletFire {
+  opacity: 100;
+  width: 20px;
+  height: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transform: rotate(160deg);
+}
+
+/* Blue ship animations */
+#blueShip:hover {
+  transform: rotate(198deg);
+}
+
+#blueShipFire {
+  transform: rotate(198deg) scale(1.1, 1.5);
+}
+
+#blueBullet {
+  opacity: 0;
+  width: 20px;
+  height: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transform: rotate(198deg);
+}
+
+#blueBulletFire {
+  opacity: 100;
+  width: 20px;
+  height: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transform: rotate(198deg);
+}
+
+/* Purple ship animations */
+#purpleShip:hover {
+  transform: rotate(216deg);
+}
+#purpleShipFire {
+  transform: rotate(216deg) scale(1.1, 1.5);
+}
+
+#purpleBullet {
+  opacity: 0;
+  width: 20px;
+  height: 25px;
+  margin-left: 40px;
+  transform: rotate(216deg);
+}
+
+#purpleBulletFire {
+  opacity: 100;
+  width: 20px;
+  height: 25px;
+  margin-left: 40px;
+  transform: rotate(216deg);
+}
+
+#explosion {
+  display: none;
+  margin-left: 45%;
+}
+
+.message {
+  line-height: 1.5em;
+}
+
 .game {
   color: red;
   text-align: center;
   font-size: 40px;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
